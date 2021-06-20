@@ -1,7 +1,8 @@
 package users
 
 import (
-	errors "bookstore_users_api/utills"
+	"bookstore_users_api/utills/date"
+	errors "bookstore_users_api/utills/error"
 	"fmt"
 )
 var(
@@ -17,7 +18,7 @@ func (user *User) Get() *errors.RestErr{
 	user.FirstName = result.FirstName
 	user.LastName =result.LastName
 	user.Email=result.Email
-	user.DateCreated=result.DateCreated
+	user.DateCreated=date.GetTimeString()
 	return nil
 }
 

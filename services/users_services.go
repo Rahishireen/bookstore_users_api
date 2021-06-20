@@ -2,7 +2,7 @@ package services
 
 import (
 	"bookstore_users_api/domain/users"
-	errors "bookstore_users_api/utills"
+	errors "bookstore_users_api/utills/error"
 )
 
 func CreateUser(user users.User) (*users.User, *errors.RestErr){

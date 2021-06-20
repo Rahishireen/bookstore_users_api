@@ -3,7 +3,7 @@ package controllers
 import (
 	"bookstore_users_api/domain/users"
 	"bookstore_users_api/services"
-	errors "bookstore_users_api/utills"
+	errors "bookstore_users_api/utills/error"
 	"net/http"
 	"strconv"
 
